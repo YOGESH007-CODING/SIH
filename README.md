@@ -1,90 +1,89 @@
-# 🏙️ CivicSpotter
+
+# 🏙️ FixMyCity
 
 **A Smart Civic Issue Reporting & Management Platform**
 
-CivicSpotter is an intelligent crowdsourced platform that empowers citizens to report local infrastructure issues through simple photo uploads while providing administrators with powerful tools to manage, track, and resolve these issues efficiently.
+FixMyCity is an intelligent crowdsourced platform that empowers citizens to report local infrastructure issues through simple photo uploads, providing administrators with powerful tools to manage, track, and resolve these issues efficiently. Every small fix makes a big difference.
 
 ## 🌟 Key Features
 
 ### 👥 For Citizens
-- **📸 Photo-Based Reporting**: Upload photos directly from camera or gallery
-- **🗺️ Automatic Location Detection**: GPS-based location extraction from photos or browser
-- **🔍 Issue Tracking**: Search and track your submitted issues by ID
-- **📱 Mobile-Friendly Interface**: Responsive design for all devices
-- **🤝 Smart Duplicate Detection**: Automatically groups similar nearby issues
+
+  - **📸 Photo-Based Reporting**: Upload photos directly from your camera or gallery.
+  - **🗺️ Automatic Location Detection**: Use GPS to automatically get location data from photos or your browser.
+  - **🔍 Issue Tracking**: Track the progress of your submitted issues with a unique ID.
+  - **📱 Mobile-Friendly Interface**: A responsive design that works on any device.
+  - **🤝 Smart Duplicate Detection**: The platform automatically groups similar, nearby issues to prevent redundancy.
 
 ### 🛠️ For Administrators
-- **📋 Comprehensive Dashboard**: Review and manage all reported issues
-- **✅ Multi-Stage Approval Process**: Metadata → Authority → Tweet review workflow
-- **📧 Automated Email Generation**: Smart authority contact discovery and email composition
-- **🐦 Social Media Integration**: Automated tweet generation and posting to amplify issues
-- **🔍 Advanced Filtering**: Filter issues by stage, city, and status
-- **📊 Real-time Status Tracking**: Monitor issue progress from submission to resolution
+
+  - **📋 Comprehensive Dashboard**: Review and manage all reported issues from a single, centralized dashboard.
+  - **✅ Multi-Stage Approval Process**: A clear workflow from metadata verification to authority contact and social media approval.
+  - **📧 Automated Email Generation**: Smartly discovers and composes emails to the correct authority contacts.
+  - **🐦 Social Media Integration**: Automatically generate and post tweets to raise awareness and amplify issues.
+  - **🔍 Advanced Filtering**: Quickly sort issues by their stage, city, and current status.
+  - **📊 Real-time Status Tracking**: Monitor issue progress live, from submission to resolution.
 
 ### 📊 Analytics & Insights
-- **📈 Interactive Analytics Dashboard**: Comprehensive data visualization and insights
-- **🗺️ Geographic Mapping**: Visual representation of issue locations
-- **📅 Trend Analysis**: Time series analysis of issue reporting patterns
-- **🔥 Heatmap Visualization**: Issue type distribution by city
-- **📤 Data Export**: Download analytics data for further analysis
+
+  - **📈 Interactive Analytics Dashboard**: A comprehensive dashboard for data visualization and insights.
+  - **🗺️ Geographic Mapping**: Visually see where issues are concentrated on an interactive map.
+  - **📅 Trend Analysis**: Analyze reporting patterns over time to identify hot spots and trends.
+  - **🔥 Heatmap Visualization**: See the geographic distribution of issue types by city.
+  - **📤 Data Export**: Download analytics data for external analysis and reporting.
 
 ### 🎬 Live Demo Features
-- **🎯 Interactive Demo Simulation**: Complete workflow demonstration
-- **🎭 Humorous Tweet Generation**: Engaging social media content with appropriate humor
-- **⚡ Real-time Processing**: Live simulation of the entire pipeline
-- **📊 Impact Metrics**: Processing time, accuracy, and automation statistics
+
+  - **🎯 Interactive Demo Simulation**: A complete, step-by-step demonstration of the entire workflow.
+  - **🎭 Humorous Tweet Generation**: Engaging and appropriately humorous social media content to get attention.
+  - **⚡ Real-time Processing**: A live simulation of the platform's processing pipeline.
+  - **📊 Impact Metrics**: See a breakdown of processing time, accuracy, and automation statistics.
 
 ## 🏗️ System Architecture
 
 ```
-┌─────────────────┐    ┌──────────────────┐    ┌─────────────────┐
-│   User Upload   │───▶│  Metadata        │───▶│  Admin Review   │
-│   (Photo +      │    │  Extraction      │    │  & Approval     │
-│    Location)    │    │  & Processing    │    │                 │
-└─────────────────┘    └──────────────────┘    └─────────────────┘
-                                │                        │
-                                ▼                        ▼
-┌─────────────────┐    ┌──────────────────┐    ┌─────────────────┐
-│   Similar       │    │   Authority      │    │   Email &       │
-│   Issue         │    │   Contact        │    │   Tweet         │
-│   Detection     │    │   Discovery      │    │   Generation    │
-└─────────────────┘    └──────────────────┘    └─────────────────┘
+┌─────────────────┐    ┌──────────────────┐    ┌─────────────────┐
+│   User Upload   │───▶│  Metadata        │───▶│  Admin Review   │
+│   (Photo +      │    │  Extraction      │    │  & Approval     │
+│    Location)    │    │  & Processing    │    │                 │
+└─────────────────┘    └──────────────────┘    └─────────────────┘
+                                │                        │
+                                ▼                        ▼
+┌─────────────────┐    ┌──────────────────┐    ┌─────────────────┐
+│   Similar       │    │   Authority      │    │   Email &       │
+│   Issue         │    │   Contact        │    │   Tweet         │
+│   Detection     │    │   Discovery      │    │   Generation    │
+└─────────────────┘    └──────────────────┘    └─────────────────┘
 ```
 
 ## 🚀 Quick Start
 
 ### Prerequisites
-- Python 3.8+
-- Required API keys (see Configuration section)
+
+  - Python 3.8+
+  - Required API keys (see Configuration section)
 
 ### Installation
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/Chaitanya782/CivicSpotter.git
-   cd CivicSpotter
-   ```
+1.  **Clone the repository**
+    ` bash git clone [https://github.com/YOGESH007-CODING/SIH.git](https://github.com/YOGESH007-CODING/SIH.git) cd SIH  `
 
-2. **Install dependencies**
-   ```bash
-   pip install -r requirements.txt
-   ```
+2.  **Install dependencies**
+    ` bash pip install -r requirements.txt  `
 
-3. **Set up environment variables**
-   ```bash
-   cp .env.example .env
-   # Edit .env with your API keys and credentials
-   ```
+3.  **Set up environment variables**
+    \`bash
+    cp .env.example .env
 
-4. **Create required directories**
-   ```bash
-   mkdir -p issues/active issues/completed temp_uploads
-   ```
+    # Edit .env with your API keys and credentials
 
-5. **Run the application**
-   ```bash
-   streamlit run main.py
-   ```
+    \`
+
+4.  **Create required directories**
+    ` bash mkdir -p issues/active issues/completed temp_uploads  `
+
+5.  **Run the application**
+    ` bash streamlit run main.py  `
 
 ## ⚙️ Configuration
 
@@ -119,227 +118,233 @@ ADMIN_PASSWORD_HASH=your-sha256-hashed-password
 
 ### API Setup Instructions
 
-1. **Google AI API**: Get your key from [Google AI Studio](https://makersuite.google.com/app/apikey)
-2. **Twitter API**: Apply for developer access at [Twitter Developer Portal](https://developer.twitter.com/)
-3. **Tavily Search**: Sign up at [Tavily](https://tavily.com/) for web search capabilities
-4. **Email**: Use Gmail with App Password or configure your SMTP provider
+1.  **Google AI API**: Get your key from [Google AI Studio](https://makersuite.google.com/app/apikey)
+2.  **Twitter API**: Apply for developer access at [Twitter Developer Portal](https://developer.twitter.com/)
+3.  **Tavily Search**: Sign up at [Tavily](https://tavily.com/) for web search capabilities
+4.  **Email**: Use Gmail with App Password or configure your SMTP provider
 
 ## 📱 Usage Guide
 
 ### For Citizens
 
-1. **Report an Issue**
-   - Navigate to User Dashboard
-   - Choose "Take photo" or "Upload from gallery"
-   - Select issue type (Pothole, Garbage, Water Leakage, etc.)
-   - Submit with automatic location detection
+1.  **Report an Issue**
 
-2. **Track Your Issue**
-   - Use the Issue ID provided after submission
-   - Search on the main page to see current status
-   - View if your issue was merged with similar reports
+      - Navigate to the User Dashboard.
+      - Choose "Take photo" or "Upload from gallery."
+      - Select the issue type (Pothole, Garbage, Water Leakage, etc.).
+      - Submit the report, and let the system handle automatic location detection.
+
+2.  **Track Your Issue**
+
+      - Use the Issue ID provided after submission to track its progress.
+      - Search on the main page to see the current status.
+      - See if your report was merged with similar issues.
 
 ### For Administrators
 
-1. **Login**
-   - Use admin credentials on the sidebar
-   - Access the Admin Dashboard
+1.  **Login**
 
-2. **Review Process**
-   - **Metadata Review**: Verify and edit extracted location data
-   - **Authority Review**: Confirm authority contact information
-   - **Tweet Review**: Review and edit generated social media content
+      - Use your admin credentials on the sidebar to access the Admin Dashboard.
 
-3. **Approval Workflow**
-   - Approve each stage to proceed to the next
-   - System automatically processes approved stages
-   - Monitor errors and retry failed operations
+2.  **Review Process**
 
-4. **Analytics & Insights**
-   - Access the Analytics Dashboard for comprehensive data visualization
-   - View geographic distribution, trend analysis, and performance metrics
-   - Export data for further analysis
+      - **Metadata Review**: Verify and edit the extracted location data.
+      - **Authority Review**: Confirm the contact information for the relevant authority.
+      - **Tweet Review**: Review and edit the automatically generated social media content.
+
+3.  **Approval Workflow**
+
+      - Approve each stage to move the issue forward.
+      - The system automatically processes approved stages.
+      - Monitor for errors and retry failed operations.
+
+4.  **Analytics & Insights**
+
+      - Access the Analytics Dashboard for comprehensive data visualization.
+      - View geographic distribution, trend analysis, and performance metrics.
+      - Export data for further analysis.
 
 ## 🔧 Core Components
 
 ### 📊 Issue Management (`src/manage_issue/`)
-- **IssueState**: Manages issue lifecycle and storage
-- **SimilarIssueFinder**: Detects and groups related issues
-- **StateTemplate**: Defines issue data structure
+
+  - **IssueState**: Manages the issue lifecycle and storage.
+  - **SimilarIssueFinder**: Detects and groups related issues.
+  - **StateTemplate**: Defines the issue data structure.
 
 ### 📍 Metadata Extraction (`src/photo_extractor.py`)
-- Extracts GPS coordinates from EXIF data
-- Reverse geocoding for address information
-- Fallback to browser GPS for camera uploads
+
+  - Extracts GPS coordinates from EXIF data.
+  - Uses reverse geocoding for addresses.
+  - Falls back to browser GPS for camera uploads.
 
 ### 🔍 Authority Discovery (`authority_finder/`)
-- **TavilySearch**: Web search for authority contacts
-- **AuthorityFinder**: AI-powered contact extraction
-- Smart query generation for local authorities
+
+  - **TavilySearch**: Performs web searches for authority contacts.
+  - **AuthorityFinder**: Uses AI to extract contacts.
+  - Generates smart, location-specific queries for local authorities.
 
 ### 📧 Communication (`Email/`, `Social_platforms/`)
-- **EmailNotifier**: Automated email composition and sending
-- **TwitterIntegration**: Tweet generation and posting
-- Professional templates with embedded images
+
+  - **EmailNotifier**: Handles automated email composition and sending.
+  - **TwitterIntegration**: Generates and posts tweets to get attention.
+  - Uses professional templates with embedded images.
 
 ### 🧠 Orchestration (`coordinator/orchestrator.py`)
-- **TheBrain**: Central coordinator managing the entire workflow
-- Stage management and approval processing
-- Error handling and retry mechanisms
+
+  - **TheBrain**: The central coordinator that manages the entire workflow.
+  - Handles stage management and approval processing.
+  - Includes error handling and retry mechanisms.
 
 ### 📊 Analytics & Visualization (`pages/_3_Analytics_Dashboard.py`)
-- **Interactive Charts**: Issue distribution, trends, and geographic mapping
-- **Real-time Metrics**: Performance tracking and insights
-- **Data Export**: CSV download functionality
-- **Responsive Design**: Optimized for all screen sizes
+
+  - **Interactive Charts**: Provides charts, maps, and heatmaps for visualization.
+  - **Real-time Metrics**: Tracks performance and key insights.
+  - **Data Export**: Allows downloading data as a CSV.
+  - **Responsive Design**: Optimized for all screen sizes.
 
 ### 🎬 Live Demo (`pages/_4_Live_Demo.py`)
-- **Interactive Simulation**: Complete workflow demonstration
-- **Humorous Content**: Engaging tweet examples with appropriate humor
-- **Technical Showcase**: Architecture and feature highlights
-- **Real-time Processing**: Live simulation of the entire pipeline
+
+  - **Interactive Simulation**: A full, interactive demonstration of the workflow.
+  - **Humorous Content**: Features engaging and fun tweet examples.
+  - **Technical Showcase**: Highlights the architecture and features.
+  - **Real-time Processing**: Simulates the pipeline live.
 
 ## 📁 Project Structure
 
 ```
-CivicSpotter/
-├── 📁 src/                     # Core application logic
-│   ├── manage_issue/           # Issue lifecycle management
-│   ├── photo_extractor.py      # Metadata extraction
-│   └── unique_id.py           # ID generation
-├── 📁 authority_finder/        # Authority contact discovery
-├── 📁 Email/                   # Email communication
-├── 📁 Social_platforms/        # Social media integration
-├── 📁 coordinator/             # Workflow orchestration
-├── 📁 pages/                   # Streamlit UI pages
-│   ├── _1_User_Dashboard.py    # Citizen reporting interface
-│   ├── _2_Admin_Dashboard.py   # Administrative management
-│   ├── _3_Analytics_Dashboard.py # Data visualization & insights
-│   └── _4_Live_Demo.py         # Interactive demonstration
-├── 📁 issues/                  # Issue storage
-│   ├── active/                 # Pending issues
-│   └── completed/              # Resolved issues
-├── main.py                     # Application entry point
-├── requirements.txt            # Dependencies
-└── HACKATHON_SUBMISSION.md     # Submission guidelines
+SIH/
+├── 📁 src/                     # Core application logic
+│   ├── manage_issue/           # Issue lifecycle management
+│   ├── photo_extractor.py      # Metadata extraction
+│   └── unique_id.py           # ID generation
+├── 📁 authority_finder/        # Authority contact discovery
+├── 📁 Email/                   # Email communication
+├── 📁 Social_platforms/        # Social media integration
+├── 📁 coordinator/             # Workflow orchestration
+├── 📁 pages/                   # Streamlit UI pages
+│   ├── _1_User_Dashboard.py    # Citizen reporting interface
+│   ├── _2_Admin_Dashboard.py   # Administrative management
+│   ├── _3_Analytics_Dashboard.py # Data visualization & insights
+│   └── _4_Live_Demo.py         # Interactive demonstration
+├── 📁 issues/                  # Issue storage
+│   ├── active/                 # Pending issues
+│   └── completed/              # Resolved issues
+├── main.py                     # Application entry point
+├── requirements.txt            # Dependencies
+└── HACKATHON_SUBMISSION.md     # Submission guidelines
 ```
 
 ## 🔄 Workflow Process
 
-1. **Issue Submission**
-   - User uploads photo with location data
-   - System extracts metadata and generates unique ID
-   - Similar issue detection prevents duplicates
+1.  **Issue Submission**
 
-2. **Admin Review Stages**
-   - **Stage 1**: Metadata verification and editing
-   - **Stage 2**: Authority contact confirmation
-   - **Stage 3**: Tweet content review and approval
+      - A user uploads a photo with location data.
+      - The system extracts metadata and generates a unique ID.
+      - Smart duplicate detection prevents multiple reports of the same issue.
 
-3. **Automated Actions**
-   - Email sent to relevant civic authority
-   - Tweet posted to amplify the issue
-   - Issue moved to completed status
+2.  **Admin Review Stages**
 
-4. **Tracking & Follow-up**
-   - Citizens can track progress via Issue ID
-   - Admins monitor resolution status
-   - Social media provides public accountability
+      - **Stage 1**: Verify and edit the extracted metadata.
+      - **Stage 2**: Confirm the authority contact information.
+      - **Stage 3**: Review and edit the social media content before it's posted.
+
+3.  **Automated Actions**
+
+      - An email is sent to the relevant civic authority.
+      - A tweet is posted to amplify the issue.
+      - The issue is automatically moved to "completed" status.
+
+4.  **Tracking & Follow-up**
+
+      - Citizens can track the progress of their issue with their Issue ID.
+      - Admins can monitor the resolution status.
+      - Public social media posts provide transparency and accountability.
 
 ## 🛡️ Security Features
 
-- **Admin Authentication**: SHA-256 password hashing
-- **Data Validation**: Input sanitization and validation
-- **File Security**: Secure image upload handling
-- **API Security**: Environment-based credential management
+  - **Admin Authentication**: Secure login with SHA-256 password hashing.
+  - **Data Validation**: Input sanitization and validation to prevent vulnerabilities.
+  - **File Security**: Secure handling of image uploads.
+  - **API Security**: All credentials are managed via environment variables.
 
 ## 🔧 Advanced Features
 
 ### Smart Duplicate Detection
-- Geographic proximity analysis (configurable radius)
-- Issue type matching
-- Postal code-based grouping
-- Automatic image aggregation for similar issues
+
+  - Analyzes geographic proximity with a configurable radius.
+  - Matches issue types.
+  - Groups issues based on postal codes.
+  - Automatically aggregates images for similar issues.
 
 ### AI-Powered Content Generation
-- Context-aware email templates
-- Professional tweet composition with appropriate humor
-- Authority contact discovery
-- Location-specific query generation
+
+  - Creates context-aware email templates.
+  - Composes professional tweets with appropriate humor.
+  - Discovers authority contacts.
+  - Generates location-specific search queries.
 
 ### Robust Error Handling
-- Retry mechanisms for failed operations
-- Comprehensive error logging
-- Graceful degradation for missing data
-- User-friendly error messages
+
+  - Retry mechanisms for failed operations.
+  - Comprehensive error logging for easy debugging.
+  - Graceful degradation for missing data.
+  - User-friendly error messages.
 
 ### Analytics & Insights
-- **Interactive Visualizations**: Charts, maps, and heatmaps
-- **Trend Analysis**: Time series data and patterns
-- **Geographic Clustering**: Location-based issue analysis
-- **Performance Metrics**: System efficiency and response times
-- **Data Export**: CSV download for external analysis
+
+  - **Interactive Visualizations**: Charts, maps, and heatmaps for easy analysis.
+  - **Trend Analysis**: Analyze time series data to spot patterns.
+  - **Geographic Clustering**: Understand issue distribution by location.
+  - **Performance Metrics**: Monitor system efficiency and response times.
+  - **Data Export**: Download data as a CSV for deeper analysis.
 
 ## 🎯 Hackathon Highlights
 
 ### Technical Innovation
-- **Multi-Modal AI**: Image processing + GPS + AI content generation
-- **Smart Automation**: Authority discovery, email generation, social media posting
-- **Real-time Processing**: Live location detection and metadata extraction
-- **Intelligent Clustering**: Automatic duplicate detection and issue grouping
+
+  - **Multi-Modal AI**: Combines image processing, GPS data, and AI-powered content generation.
+  - **Smart Automation**: Automates authority discovery, email generation, and social media posting.
+  - **Real-time Processing**: Features live location detection and metadata extraction.
+  - **Intelligent Clustering**: Automatically detects and groups duplicate issues.
 
 ### User Experience Excellence
-- **Mobile-First Design**: Responsive interface for all devices
-- **Intuitive Workflow**: Simple photo upload → automatic processing
-- **Real-time Feedback**: Live progress tracking and status updates
-- **Accessibility**: Works with camera or gallery uploads
+
+  - **Mobile-First Design**: A responsive interface optimized for all devices.
+  - **Intuitive Workflow**: A simple flow from photo upload to automated processing.
+  - **Real-time Feedback**: Live progress tracking and status updates for users.
+  - **Accessibility**: Works with both camera and gallery uploads.
 
 ### Social Impact
-- **Civic Engagement**: Empowers citizens to report local issues
-- **Government Efficiency**: Streamlines issue management for authorities
-- **Transparency**: Public social media posting for accountability
-- **Scalability**: Works across multiple cities and issue types
+
+  - **Civic Engagement**: Empowers citizens to be part of the solution.
+  - **Government Efficiency**: Streamlines the issue management process for authorities.
+  - **Transparency**: Public social media posting for greater accountability.
+  - **Scalability**: Designed to work across multiple cities and issue types.
 
 ## 🤝 Contributing
 
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
+1.  Fork the repository.
+2.  Create a feature branch (`git checkout -b feature/amazing-feature`).
+3.  Commit your changes (`git commit -m 'Add amazing feature'`).
+4.  Push to the branch (`git push origin feature/amazing-feature`).
+5.  Open a Pull Request.
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](https://www.google.com/search?q=LICENSE) file for details.
 
 ## 🆘 Support
 
-- **Issues**: Report bugs or request features via GitHub Issues
-- **Documentation**: Check the code comments for detailed implementation notes
-- **Community**: Join discussions in the repository
+  - **Issues**: Report bugs or request features via GitHub Issues.
+  - **Documentation**: Check the code comments for detailed implementation notes.
+  - **Community**: Join discussions in the repository.
 
 ## 🙏 Acknowledgments
 
-- **Streamlit** for the amazing web framework
-- **Google AI** for intelligent content generation
-- **Twitter API** for social media integration
-- **OpenStreetMap/Nominatim** for geocoding services
-- **Tavily** for web search capabilities
-- **Plotly** for interactive data visualizations
-
----
-
-<!-- Built with Bolt.new Badge -->
-<div align="center">
-    <a href="https://bolt.new" target="_blank">
-        <img src="https://img.shields.io/badge/Built%20with-Bolt.new-FF6B6B?style=for-the-badge&logo=lightning&logoColor=white" 
-             alt="Built with Bolt.new" 
-             style="border-radius: 8px; box-shadow: 0 4px 12px rgba(255, 107, 107, 0.3);">
-    </a>
-</div>
-
-<div align="center">
-    <p><strong>Built with ❤️ for better civic engagement and community empowerment</strong></p>
-    <p><em>CivicSpotter - Making cities more responsive, one photo at a time.</em></p>
-    <p>⚡ Powered by AI • 🎯 Built for Impact • 🚀 Deployed with Bolt</p>
-</div>
+  - **Streamlit** for the amazing web framework.
+  - **Google AI** for intelligent content generation.
+  - **Twitter API** for social media integration.
+  - **OpenStreetMap/Nominatim** for geocoding services.
+  - **Tavily** for web search capabilities.
+  - **Plotly** for interactive data visualizations.
