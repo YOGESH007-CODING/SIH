@@ -1,0 +1,16 @@
+exifread
+geopy
+requests
+filelock
+dotenv
+tweepy
+streamlit
+beautifulsoup4
+google-generativeai
+tavily-python
+streamlit-js-eval
+plotly
+pandas
+numpy>=1.21.0
+folium>=0.12.1
+pytest
